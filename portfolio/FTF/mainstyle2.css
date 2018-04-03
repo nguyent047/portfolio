@@ -1,0 +1,200 @@
+html {
+    font-family: "lemon/milk", "avenir next", "tahoma";
+    background: url("hoofdpaginaimgs/metro1.png") no-repeat;
+    /* afbeelding komt van de isga 2016-2017 */
+    background-color: black;
+    background-size:auto 800%;
+}
+
+#firstthings {
+    width: 70px;
+    height: auto;
+    margin-top: -80px;
+}
+
+h1 {
+    color: white;
+    font-family:"lemon/milk", "avenir next", "tahoma";
+    font-size: 22px;
+      border: 2px solid #949599;
+    border-right-width: 20px;
+    margin-top: 70px;
+      padding: 10px;
+  width: 260px;
+
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #585858;
+    margin-left: -40px;
+    padding-left: 30px;
+}
+
+img {
+    width: 120px;
+    float: left;
+    margin-right: 15px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: lightgrey;
+}
+
+#pagina2nav {
+    display: block;
+    background-color: grey;
+    text-align: center;
+        border: .2rem solid #292929;
+    border-right: 1.2rem solid #292929;
+    width: 210px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 35px;
+    padding-right: 40px;
+    padding-left: -20px;
+}
+
+nav, h1, h2, h3, section {
+    color: white;
+}
+
+p {
+    font-size: 14px;
+}
+
+section {
+        margin-bottom: 30px;
+    margin-top: inherit;
+        margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ********************************************
+    css dropdown-menu van weggeefcode.nl
+    auteur: Sonja Rouwhorst
+    datum: 2016-10-19
+   ******************************************** */
+
+/* ****************************************
+    GENERAL STUFF
+   **************************************** */
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* ****************************************
+   CONTAINERS en HEADING
+   **************************************** */
+.cmda-dropdown-menu {
+	position:absolute;
+	width:100%;
+	min-height:2.75rem;
+}
+
+.cmda-dropdown-menu h1 {
+	margin:0;
+	line-height:2.75rem;
+	padding:0 2.75rem 0 1rem;
+	background:grey;
+	color:white;
+}
+
+/* ****************************************
+    PANCAKE & CLOSE ICON
+   **************************************** */
+.cmda-dropdown-menu #cmda-dropdown-icon {
+    position:absolute;
+	top:-2.5rem;
+	right:10.5rem;
+	font-size: 1.75rem;
+    height: 1.75rem;
+	line-height: 1.5rem;
+	width:1.75rem;
+	text-align:center;
+	border:solid 1px white;
+    cursor: pointer;
+    -moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+.cmda-dropdown-menu #cmda-dropdown-icon::after {
+    color:white;
+	content: "\2261"; /* utf-8 code voor pannenkoek symbool */
+}
+.cmda-dropdown-menu #cmda-dropdown-icon.close-icon {
+	line-height: 1.25rem;
+}
+.cmda-dropdown-menu #cmda-dropdown-icon.close-icon::after {
+    content: "\2A2F"; /* utf-8 code voor kruis */
+}
+
+/* ****************************************
+    DROPDOWN MENU
+   **************************************** */
+
+.cmda-dropdown-menu ul {
+    max-height:0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+	overflow:hidden;
+	-webkit-transition:.5s ease-out;
+	transition:.5s ease-out;
+    margin-top: -5px;
+}
+.cmda-dropdown-menu .show {
+	max-height:32rem;
+}
+.cmda-dropdown-menu li {
+    border-bottom: 1px dotted white;
+}
+.cmda-dropdown-menu li:last-of-type {
+    border: none;
+}
+.cmda-dropdown-menu a {
+    position:relative;
+	display: block;
+    padding: .75rem 2rem .75rem 1rem;
+	line-height:1.25rem;
+	background-color: rgba(179,179,179,.92);
+	color:black;
+}
+.cmda-dropdown-menu a:hover {
+    background-color: rgba(128,128,128,.92);
+	color:white;
+}
+.cmda-dropdown-menu a::after {
+    content: "\203A"; /* utf-8 code voor > teken */
+	position: absolute;
+    right: 1rem;
+	top:50%;
+    font-size:1.3rem;
+	line-height:2.75rem;
+	color:black;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.cmda-dropdown-menu a:hover::after {
+	color:white;
+}
+/* ****************************************
+    einde css dropdown-menu van weggeefcode.nl
+   **************************************** */

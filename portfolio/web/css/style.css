@@ -1,0 +1,811 @@
+/* Generic styling */
+
+* {
+    box-sizing: border-box;
+    text-align:center;
+    font-family: Nexa Light;
+}
+
+section {
+    font-size: 1em;
+}
+
+body {
+    background-color: rgb(243, 229, 217);
+}
+
+a:visited {
+    color: white;
+}
+
+/* Header styping */
+
+/* Header menu */
+
+header nav{
+    margin: -1em -0.6em;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: -2em;
+}
+
+ul li:nth-of-type(1) {
+    font: 0/0 a;
+    background: url(images/home.png);
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+ul li:nth-of-type(2) {
+    font: 0/0 a;
+    background: url(images/account.png);
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+ul li:nth-of-type(3) {
+    font: 0/0 a;
+    background: url(images/transavia-logo.png);
+    background-repeat: no-repeat;
+    margin-top: 0.4rem;
+    background-size: 3.7rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+li a {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header h1 */
+
+header section {
+    background: url(images/beach-book-ffw.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:auto;
+    height: 10rem;
+    margin: -1.1em -0.5em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    color: rgb(46, 230, 139);
+    font-family: Nexa Bold;
+    font-size: 2.3em;
+    background-color: white;
+    height: 1em;
+    border-radius: 0.2em;
+    border: 1em;
+}
+
+/* Main */
+
+/* Main generic styling */
+
+main {
+    padding: 1rem;
+}
+
+section h2 {
+    font: 0/0 a;
+    display: none;
+}
+
+main h2 {
+    margin: 0.5em 0;
+}
+
+article header {
+    display: flex;
+    color: rgb(46, 230, 139);
+    justify-content: center;
+    border-radius: 0.3em 0.3em 0 0;
+    border: 1 solid rgb(255, 255, 255);
+    margin: 0;
+}
+
+article a:visited {
+    color: rgb(46, 230, 139);
+}
+
+article a:hover {
+    color: rgb(255, 6, 111);
+}
+
+article a:active {
+  color:#452aa0;
+}
+
+article img {
+    width: calc(100%);
+}
+
+main article {
+    background-color: rgba(255, 255, 255, 0.62);
+    border-radius: 0.5em;
+    border: 0.05em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    padding: 0 1em 1em 1em;
+    text-align:left;
+}
+
+/* Form */
+
+/* Form generic styling */
+
+form {
+    background-color: rgba(255, 255, 255, 0.73);
+    border-radius: 0.5em;
+    margin: -0em .7em 0em 0.7em;
+    padding: 0.5em;
+    overflow: hidden;
+}
+
+form fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.2em;
+}
+
+button {
+    font: Nexa Bold;
+    font-size: 1em;
+    color: white;
+    border-radius: 1em;
+    width: 6em;
+    background-color: rgb(255, 6, 111);
+    padding: 0.3em;
+    margin: 0.5em;
+}
+
+fieldset button {
+    display: block;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: rgb(255, 73, 150);
+}
+
+button:active {
+    transform: scale(.9, .9);
+    background-color: rgb(255, 155, 197);
+}
+
+/* Themes button */
+
+@keyframes themeButtonDescription {
+    0% {
+        content: "F"
+    }
+    10% {
+        content: "Fil"
+    }
+    20% {
+        content: "Filt"
+    }
+    30% {
+        content: "Filter"
+    }
+    40% {
+        content: "Filteren"
+    }
+    50% {
+        content: "Filteren o"
+    }
+    60% {
+        content: "Filteren op "
+    }
+    70% {
+        content: "Filteren op t"
+    }
+    80% {
+        content: "Filteren op the"
+    }
+    90% {
+        content: "Filteren op thema"
+    }
+    100% {
+        content: "Filteren op thema's";
+    }
+}
+
+/* bron: https://cssanimation.rocks/nl/pseudo-elements/ */
+
+#themeButton:hover::after {
+    content: "Filteren op thema's";
+    display: block;
+    font-size: 0.7em;
+    margin: 1em 0 0 0;
+    animation: themeButtonDescription 0.5s;
+}
+
+/* Sort button */
+
+@keyframes sortButtonDescription {
+    0% {
+        content: ""
+    }
+    10% {
+        content: "De"
+    }
+    20% {
+        content: "De v"
+    }
+    30% {
+        content: "De ver"
+    }
+    40% {
+        content: "De verha"
+    }
+    50% {
+        content: "De verhale"
+    }
+    60% {
+        content: "De verhalen "
+    }
+    70% {
+        content: "De verhalen so"
+    }
+    80% {
+        content: "De verhalen sort"
+    }
+    90% {
+        content: "De verhalen sorter"
+    }
+    100% {
+        content: "De verhalen sorteren";
+    }
+}
+
+/* bron: https://cssanimation.rocks/nl/pseudo-elements/ */
+
+#sortButton:nth-of-type(2):hover::after {
+    content: "De verhalen sorteren";
+    display: block;
+    font-size: 0.7em;
+    margin: 1em 0 0 0;
+    animation: sortButtonDescription 0.5s;
+}
+
+/* Themes fieldset */
+
+body > form:nth-of-type(1) fieldset {
+    position: absolute;
+    margin-left: -99em;
+}
+
+body > form:nth-of-type(1) fieldset.active {
+    transition: 0.5s;
+    position:relative;
+    margin: 0;
+}
+
+/* Sort fieldset */
+
+body > form:nth-of-type(2) fieldset {
+    position: absolute;
+    margin-left: -99em;
+}
+
+body > form:nth-of-type(2) fieldset.active {
+    transition: 0.5s;
+    position:relative;
+    margin: 0;
+}
+
+/* Login */
+
+legend {
+    font: 0/0 a;
+}
+
+fieldset {
+    border:none;
+    padding:1em 1em 0 1em;
+    border-radius: 0.5em;
+}
+fieldset:invalid {
+    background: rgba(255, 255, 255, 0.38);
+    border: 0;
+}
+
+fieldset:valid {
+    padding: 1em;
+}
+
+fieldset #feedback {
+    text-align: center;
+    font: Nexa Bold;
+    background:#2535ac;
+    padding:.25em;
+    border-radius: 0.5em;
+    color: white;
+    margin: 0 2em 1em;
+}
+
+fieldset:valid #feedback {
+    transition: 0.2s;
+    font: 0/0 a;
+}
+
+fieldset:invalid #inloggen {
+    transition: 0.2s;
+    display: none;
+}
+
+fieldset:valid a:nth-of-type(2) {
+    transition: 0.2s;
+    font: 0/0 a;
+    font: 0/0 a;
+}
+
+input {
+    border: #000;
+    padding:.25em;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    transition:all .2s;
+    border-radius: 0.5em;
+}
+
+main input {
+    width: 100%;
+}
+
+input:valid {
+    border: 0.1em solid rgb(48, 229, 139);
+} 
+
+input:invalid {
+    border: 0.1em solid rgb(255, 6, 111);
+}
+
+form a {
+    font: nexa bold;
+    font-size: 1em;
+    border-radius: 0.5em;
+    background-color: rgb(255, 6, 111);
+    padding: 0.3em;
+    color: white;
+}
+
+/* Aside */
+
+aside {
+    background-color: rgba(255, 255, 255, 0.34);
+    border-radius: .5em;
+    padding: 0.5em;
+    padding-bottom: 2em;
+    margin: 0em 2em 0 2em;
+    overflow: hidden;
+}
+
+aside button {
+    text-indent: -9999em;
+    background: url(images/tandwiel.png);
+    background-size: 2em;
+    background-repeat: no-repeat;
+    width: 2.2em;
+    height: 2.2em;
+}
+
+div {
+    margin-left: 2.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+aside button:hover {
+    background-color: rgba(178, 34, 34, 0);
+}
+
+aside p, aside a {
+    transition: 0.5s;
+    border-radius: .5em;
+    padding: .5em;
+    position: absolute;
+    margin-left: -99em;
+    margin-right: 99em;
+}
+
+p.active, a.active {
+    position:relative;
+    margin: 0 2em 0 2em;
+}
+
+aside a {
+    border-radius: 0.8em;
+    width: 3em;
+    background-color: rgb(255, 6, 111);
+    padding: .5em;
+}
+
+aside a:hover {
+    transition: 0.5s;
+    background-color: rgb(255, 83, 156);
+}
+
+aside img:first-of-type {
+    width: 8em
+}
+
+aside img:first-of-type {
+    width: 8em
+}
+
+/* Add to list button */
+
+section button:first-of-type {
+    text-indent: -9999em;
+    background: url(images/Tekengebied%201.png);
+    background-repeat: no-repeat;
+    background-size: 6em;
+    width: 6em;
+    height: 2.2em;
+    border: none;
+}
+
+section button:first-of-type:hover {
+    transition: 0.5s;
+    text-indent: -9999em;
+    background: url(images/Tekengebied%205.png);
+    background-repeat: no-repeat;
+    background-size: 6em;
+    width: 6em;
+    height: 2.2em;
+}
+
+section button:first-of-type.active {
+    transition: 0.5s;
+    text-indent: -9999em;
+    background: url(images/Tekengebied%209.png);
+    background-repeat: no-repeat;
+    background-size: 6em;
+    width: 6em;
+    height: 2.2em;
+}
+
+/* Download button */
+
+section button:nth-of-type(2) {
+    text-indent: -9999em;
+    background: url(images/1.png);
+    background-repeat: no-repeat;
+    background-size: 6em;
+    width: 6em;
+    height: 2.2em;
+    border: none;
+}
+
+section button:nth-of-type(2):hover {
+    transition: 0.5s;
+    text-indent: -9999em;
+    background: url(images/2.png);
+    background-repeat: no-repeat;
+    background-size: 7.5em;
+    width: 8em;
+    height: 2.2em;
+}
+
+section button:nth-of-type(2).active {
+    transition: 0.5s;
+    text-indent: -9999em;
+    background: url(images/3.png);
+    background-repeat: no-repeat;
+    background-size: 6em;
+    width: 6em;
+    height: 2.2em;
+}
+
+/* Rate button */
+
+section button:last-of-type {
+    direction: rtl;
+}
+
+section button:last-of-type > span:hover:before,
+section button:last-of-type > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+
+/* bron: https://css-tricks.com/star-ratings/ */
+
+/* Stories */
+
+#verliefd {
+    text-indent: -9999em;
+    border-radius: 0em;
+    background: url(images/verliefd-smartphone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: calc(100%);
+    height: 350em;
+}
+
+#neerslachtig {
+    text-indent: -9999em;
+    border-radius: 0em;
+    background: url(images/neerslachtig-smartphone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: calc(100%);
+    height: 170em;
+}
+
+#kinderboek {
+    text-indent: -9999em;
+    border-radius: 0em;
+    background: url(images/kinderboek-smartphone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: calc(100%);
+    height: 210em;
+}
+
+/* Media queries */
+    
+@media (min-width: 32em) {
+    
+    /* Home page story (index main) grid */
+
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 1rem;
+        grid-row-gap: 0.7rem;
+        grid-template-rows: auto;
+    }
+    
+    h2 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+    
+    body article:nth-of-type(3) {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    body article:nth-of-type(7) {
+        grid-column: 1 / span 2;
+        grid-row: 6;
+    }
+    
+    form {
+        margin: 0 7em;
+        grid-column: 1 / span 2;
+    }
+    
+    /* Aside */
+    
+    aside {
+       margin: 0 10em;
+    }
+    
+    /* Story grid */
+    
+    #verliefd {
+        grid-column: 1 / span 2;
+        text-indent: -9999em;
+        border-radius: 0em;
+        background: url(images/verliefd-tablet.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: calc(100%);
+        height: 145em;
+    }
+    
+    #neerslachtig {
+        grid-column: 1 / span 2;
+        text-indent: -9999em;
+        border-radius: 0em;
+        background: url(images/neerslachtig-tablet.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: calc(100%);
+        height: 80em;
+    }
+    
+    #kinderboek {
+        grid-column: 1 / span 2;
+        text-indent: -9999em;
+        border-radius: 0em;
+        background: url(images/kinderboek-tablet.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: calc(100%);
+        height: 115em;
+    }
+    
+    /* Add to list button */
+    
+    section button:first-of-type {
+        text-indent: -9999em;
+        background: url(images/Tekengebied%201.png);
+        background-repeat: no-repeat;
+        background-size: 10em;
+        width: 10em;
+        height: 3.7em;
+        border: none;
+    }
+
+    section button:first-of-type:hover {
+        transition: 0.5s;
+        text-indent: -9999em;
+        background: url(images/Tekengebied%205.png);
+        background-repeat: no-repeat;
+        background-size: 10em;
+        width: 10em;
+        height: 3.7em;
+    }
+
+    section button:first-of-type.active {
+        transition: 0.5s;
+        text-indent: -9999em;
+        background: url(images/Tekengebied%209.png);
+        background-repeat: no-repeat;
+        background-size: 10em;
+        width: 10em;
+        height: 3.7em;
+    }
+
+    /* download button */
+
+    section button:nth-of-type(2) {
+        text-indent: -9999em;
+        background: url(images/1.png);
+        background-repeat: no-repeat;
+        background-size: 10em;
+        width: 10em;
+        height: 3.7em;
+        border: none;
+    }
+
+    section button:nth-of-type(2):hover {
+        transition: 0.5s;
+        text-indent: -9999em;
+        background: url(images/2.png);
+        background-repeat: no-repeat;
+        background-size: 13em;
+        width: 13em;
+        height: 4em;
+    }
+
+    section button:nth-of-type(2).active {
+        transition: 0.5s;
+        text-indent: -9999em;
+        background: url(images/3.png);
+        background-repeat: no-repeat;
+        background-size: 10em;
+        width: 10em;
+        height: 3.7em;
+    }
+    
+    /* Rate button */
+
+    section button:last-of-type {
+        width: 8em;
+        height: 3em;
+    }
+}
+
+
+@media (min-width: 55em) {
+    
+    /* Home page story (index main) grid */
+    
+	body {
+	    max-width: 80em;
+	}
+    
+    body main:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 65% auto;
+        grid-column-gap: 1rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+        grid-template-rows: auto;
+        grid-row-gap: 0.7rem;
+    }
+    
+    h2 {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+    }
+    
+    body article:first-of-type {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+    
+    body article:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    body article:nth-of-type(6) {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+    
+    body article:nth-of-type(7) {
+        grid-column: 3;
+        grid-row: 4;
+    }
+    
+    body article:nth-of-type(11) {
+        grid-column: 1 / span 2;
+        grid-row: 6;
+    }
+    
+    form {
+        margin: 0 18em;
+        grid-column: 1 / span 3;
+    }
+    
+    /* Aside */
+    
+    aside {
+        margin: 0 18em;
+    }
+    
+    /* Story grid */
+    
+    #verliefd {
+        grid-column: 1 / span 3;
+        text-indent: -9999em;
+        border-radius: 0em;
+        background: url(images/verliefd%20desktop.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: calc(100%);
+        height: 100em;
+    }
+    
+    #neerslachtig {
+        grid-column: 1 / span 3;
+        text-indent: -9999em;
+        border-radius: 0em;
+        background: url(images/neerslachtig-desktop.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: calc(100%);
+        height: 50em;
+    }
+    
+    #kinderboek {
+        grid-column: 1 / span 3;
+        text-indent: -9999em;
+        border-radius: 0em;
+        background: url(images/kinderboek-desktop.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: calc(100%);
+        height: 80em;
+    }
+}

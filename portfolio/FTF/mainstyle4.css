@@ -1,0 +1,177 @@
+html {
+    background: url("hoofdpaginaimgs/metro1.png") no-repeat;
+    /* afbeelding komt van de isga 2016-2017 */
+    background-color: black;
+    background-size:auto 800%;
+    font-family:"lemon/milk", "avenir next", "tahoma";
+}
+
+/* images */
+
+#firstthings {
+    width: 70px;
+    height: auto;
+    margin-top: -10px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family:"lemon/milk", "avenir next", "tahoma";
+    font-size: 22px;
+      border: 2px solid #949599;
+        border-right-width: 20px;
+  height: 75x;
+    margin-bottom: 10px;
+    margin-right: 42px;
+    margin-top: -30px;
+  padding: 10px;
+  width: 280px;
+    float: right;
+}
+    
+#introduction {
+    display:block;
+    color: white;
+    border: 2px solid #949599;
+    text-align: left;
+    margin-top: 40px;
+
+    }
+
+a {
+    color: beige;
+}
+
+a:hover {
+    color: #ffffc9;
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    font-size: 12px;
+}
+
+/* ********************************************
+    css dropdown-menu van weggeefcode.nl
+    auteur: Sonja Rouwhorst
+    datum: 2016-10-19
+   ******************************************** */
+
+/* ****************************************
+    GENERAL STUFF
+   **************************************** */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* ****************************************
+   CONTAINERS en HEADING
+   **************************************** */
+.cmda-dropdown-menu {
+	position:absolute;
+	width:100%;
+	min-height:2.75rem;
+}
+
+.cmda-dropdown-menu h1 {
+	margin:0;
+	line-height:2.75rem;
+	padding:0 .75rem 0 1rem;
+	background:grey;
+	color:white;
+}
+
+/* ****************************************
+    PANCAKE & CLOSE ICON
+   **************************************** */
+.cmda-dropdown-menu #cmda-dropdown-icon {
+    position:absolute;
+	top:-4rem;
+	right:10.5rem;
+	font-size: 1.75rem;
+    height: 1.75rem;
+	line-height: 1.5rem;
+	width:1.75rem;
+	text-align:center;
+	border:solid 1px white;
+    cursor: pointer;
+    -moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+.cmda-dropdown-menu #cmda-dropdown-icon::after {
+    color:white;
+	content: "\2261"; /* utf-8 code voor pannenkoek symbool */
+}
+.cmda-dropdown-menu #cmda-dropdown-icon.close-icon {
+	line-height: 1.25rem;
+}
+.cmda-dropdown-menu #cmda-dropdown-icon.close-icon::after {
+    content: "\2A2F"; /* utf-8 code voor kruis */
+}
+
+/* ****************************************
+    DROPDOWN MENU
+   **************************************** */
+
+.cmda-dropdown-menu ul {
+    max-height:0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+	overflow:hidden;
+	-webkit-transition:.5s ease-out;
+	transition:.5s ease-out;
+        margin-top: -30px;
+}
+.cmda-dropdown-menu .show {
+	max-height:62rem;
+}
+.cmda-dropdown-menu li {
+    border-bottom: 1px dotted white;
+}
+.cmda-dropdown-menu li:last-of-type {
+    border: none;
+}
+.cmda-dropdown-menu a {
+    position:relative;
+	display: block;
+    padding: .75rem 2rem .75rem 1rem;
+	line-height:1.25rem;
+	background-color: rgba(179,179,179,.92);
+	color:black;
+}
+.cmda-dropdown-menu a:hover {
+    background-color: rgba(128,128,128,.92);
+	color:white;
+}
+.cmda-dropdown-menu a::after {
+    content: "\203A"; /* utf-8 code voor > teken */
+	position: absolute;
+    right: 1rem;
+	top:50%;
+    font-size:1.3rem;
+	line-height:2.75rem;
+	color:black;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.cmda-dropdown-menu a:hover::after {
+	color:white;
+}
+/* ****************************************
+    einde css dropdown-menu van weggeefcode.nl
+   **************************************** */

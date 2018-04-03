@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Registreren</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+    
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="web.html">Home</a></li>
+                    <li><a href="account_empty.html">Eigen account</a></li>
+                    <li><a href="http://www.transavia.nl">Transavia</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <h1>Registreren</h1>
+            <form action='account_empty.html'>
+                <fieldset>
+                    <legend>
+                        Contactgegevens
+                    </legend>
+                    <label>Naam<input type="text" required></label>
+                    <label>Email<input type="email" required></label>
+                    <label>Wachtwoord<input type="password" required></label>
+                    <label>Herhaal wachtwoord<input type="password" required></label>
+                    <p id=feedback>Vul alle onderdelen in</p>
+                    <button class=registreren>Registreer</button>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+
+</html>
